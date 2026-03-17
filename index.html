@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Clash Royale | Deck aleatório</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="https://logodownload.org/wp-content/uploads/2017/04/clash-royale-logo.png" alt="Logo" class="logo">
+            <h1>Sorteador de Cartas</h1>
+        </header>
+        
+        <div id="card-display" class="card-box">
+            <div id="loader" style="display: none;">Carregando Arena...</div>
+            <img id="card-img" src="" alt="Carta" style="display: none;">
+            <h2 id="card-name">Clique para começar</h2>
+            <div class="card-details">
+                <p id="card-elixir"></p>
+                <p id="card-type"></p>
+            </div>
+        </div>
+
+        <button id="btn-sortear" onclick="sortearCarta()">Sortear Carta</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

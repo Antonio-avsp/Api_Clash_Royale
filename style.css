@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+:root {
+    --cr-blue-dark: #0e0e3a;
+    --cr-blue-light: #1c16d2;
+    --cr-gold-light: #ffeb3b;
+    --cr-gold-dark: #b58d00;
+    --cr-border: #4a90e2;
+    --white: #ffffff;
+}
+
+body {
+    background-color: var(--cr-blue-dark);
+
+    background: radial-gradient(circle, #2b2a6e 0%, #0b0a2e 100%);
+    color: var(--white);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background: linear-gradient(180deg, #1b1b4b 0%, #0d0d2b 100%);
+    padding: 30px;
+    border-radius: 20px;
+    border: 6px solid var(--cr-border);
+    width: 340px;
+    box-shadow: 0 20px 0px rgba(0,0,0,0.4), 0 0 50px rgba(0,0,0,0.8);
+    position: relative;
+}
+
+
+header h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 2.5rem;
+    color: var(--cr-gold-light);
+    text-shadow: 3px 3px 0px #4b3600, 5px 5px 0px rgba(0,0,0,0.2);
+    letter-spacing: 2px;
+    margin-top: 0;
+    -webkit-text-stroke: 1px #000;
+}
+
+.logo { 
+    width: 180px; 
+    margin-bottom: -15px;
+    filter: drop-shadow(0 5px 5px rgba(0,0,0,0.5));
+}
+
+
+.card-box {
+    background: #e6e6e6;
+    background: linear-gradient(135deg, #ffffff 0%, #d1d1d1 100%);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #333;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.4), 0 10px 0 rgba(0,0,0,0.2);
+}
+
+#card-img {
+    width: 160px;
+
+    animation: float 3s ease-in-out infinite;
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.4));
+}
+
+#card-name { 
+    font-family: 'Bangers', cursive;
+    font-size: 1.8rem; 
+    margin: 15px 0 5px; 
+    color: #111;
+    text-transform: uppercase;
+}
+
+.card-details { 
+    background: #333;
+    color: #00ff00; /* Verde Elixir */
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 2px solid #000;
+}
+
+
+button {
+    background: linear-gradient(180deg, #ffeb3b 0%, #ffc107 100%);
+    color: #4b3600;
+    border: none;
+    padding: 18px 0;
+    font-family: 'Bangers', cursive;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+
+    box-shadow: 0 8px 0px #b58d00, 0 12px 15px rgba(0,0,0,0.5);
+    border: 2px solid #4b3600;
+    transition: all 0.1s;
+    outline: none;
+}
+
+button:hover {
+    filter: brightness(1.1);
+}
+
+button:active {
+    box-shadow: 0 3px 0px #b58d00;
+    transform: translateY(5px);
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
